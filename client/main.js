@@ -27,11 +27,11 @@ $(document).ready(function() {
   }
 
   function addQuote(quote){
-    console.log(quote);
     //YOUR CODE HERE, Add a POST request
     var dataObj = {
       quote: quote
     }
+
     $.ajax({
       type: 'POST',
       url: 'http://localhost:3000/quote',
